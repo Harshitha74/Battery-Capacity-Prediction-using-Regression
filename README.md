@@ -31,44 +31,9 @@ We trained the models using an 80/20 train-test split. Each model was fitted to 
 ## 7. Evaluation
 We evaluated the models using metrics like MAE, MSE, RMSE, R², RMSLE, MAPE, and Training Time. This comprehensive evaluation provided a clear understanding of each model's performance, helping us select the best candidate.
 
-## 8. Model Deployment
-Using PyCaret, we deployed various regression models and found that ExtraTreesRegressor performed the best with outstanding metrics. We then identified four key features—cycles, voltage_battery, temp_battery, and time—and deployed the model to a web application. This application allows users to input these values and get real-time battery capacity predictions.
-
-## 9. Conclusion
+## 8. Conclusion
 Our EV Battery Capacity Prediction Model optimizes battery performance by accurately predicting battery capacity. This empowers users to make informed decisions about driving habits and charging schedules, alleviating range anxiety and extending battery life. As battery technology evolves, our model can incorporate additional factors for even more accurate and personalized predictions.
 
 ---
 
-# Installation and Usage Tutorial
 
-## Installation and Usage Tutorial
-
-1. **Clone the Repository**
-```bash
-git clone https://github.com/yourusername/Battery-Capacity-Prediction-Using-Regression.git
-cd Battery-Capacity-Prediction-Using-Regression
-```
-2. **Create and Activate a Virtual Environment**
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-```
-
-3. **Install the Required Packages**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Run the Jupyter Notebook**
-```bash
-cd working_directory
-jupyter notebook
-```
-
-4. **Deploy the Model**
-```bash
-cd ../!app
-flask run
-```
-5. **Access the web application**\
-Host the web application on any hosting of your choice, preferably Python Anywhere
